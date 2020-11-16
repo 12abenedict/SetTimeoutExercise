@@ -31,8 +31,30 @@ setTimeout(() => {
   }, 1000);
 }, 2000);
 
-/*
 // BONUS
+// 3a
+const count = document.querySelector("#count");
+// 3b
+const num = document.createElement("h1");
+// 3c
+count.append(num);
+num.innerText = 3;
+setTimeout(() => {
+  num.innerText--;
+  setTimeout(() => {
+    num.innerText--;
+    setTimeout(() => {
+      // num.innerText--;
+      const body = document.querySelector('body');
+      body.classList.add('background');
+      // OR
+      // document.querySelector('body').classList.add('background');
+    }, 1000);
+  }, 1000);
+}, 1000);
+
+/*
+//OLD BONUS
 // 3a
 const count = document.querySelector("#count");
 // 3b
